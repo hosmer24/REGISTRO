@@ -3,23 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro de ID</title>
+    <title>ESP8266 Data Logger</title>
 </head>
 <body>
-    <h1>Registro de ID</h1>
-    <div id="display"></div>
-
-    <script>
-        // Obtener el ID de la URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const id = urlParams.get('id');
-
-        // Registrar fecha y hora actual
-        const now = new Date();
-        const dateTimeString = now.toLocaleString();
-
-        // Mostrar ID y fecha/hora en la página
-        document.getElementById('display').innerHTML = `<p>ID recibido: ${id}</p><p>Fecha y hora: ${dateTimeString}</p>`;
-    </script>
+    <h1>ESP8266 Data Logger</h1>
+    <div id="log"></div>
+    <script src="app.js"></script>
 </body>
 </html>
